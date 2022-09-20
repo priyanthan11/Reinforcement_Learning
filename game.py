@@ -34,7 +34,7 @@ BLUE2 = (0, 100, 255)
 BLACK = (0, 0, 0)
 
 BLOCK_SIZE = 20  # Size of the single block. means a single part of squre of snake or food
-SPEED = 10  # speed of the game
+SPEED = 40  # speed of the game
 
 
 class SnakeGameAI:  # the game class
@@ -110,7 +110,7 @@ class SnakeGameAI:  # the game class
         if pt is None:
             pt = self.head
         # hits Boundary
-        if pt.x > self.w - BLOCK_SIZE or pt.x < 0 or pt.y > pt - BLOCK_SIZE or pt.y < 0:
+        if pt.x > self.w - BLOCK_SIZE or pt.x < 0 or pt.y > self.h - BLOCK_SIZE or pt.y < 0:
             return True
         # hit itself
         if pt in self.snake[1:]:
