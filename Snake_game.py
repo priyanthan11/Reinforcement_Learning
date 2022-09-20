@@ -46,7 +46,7 @@ class SnakeGameAI:  # the game class
         pygame.display.set_caption('Snake')  # title of the game
         self.clock = pygame.time.Clock()  # set Tick
 
-    def reset(self):  # Strat from begining
+    def reset(self):
         # init game state
         self.direction = Direction.RIGHT  # at start snake will go right side
 
