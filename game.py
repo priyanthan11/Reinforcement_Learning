@@ -4,8 +4,9 @@ from enum import Enum
 from collections import namedtuple
 import numpy as np
 
+
 pygame.init()  # start initialiazation
-font = pygame.font.Font('AGENCYR.TTF', 25)  # define font
+font = pygame.font.Font('AGENCYR.TTF', 15)  # define font
 
 # reset
 
